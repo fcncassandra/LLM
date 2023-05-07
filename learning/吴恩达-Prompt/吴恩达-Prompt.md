@@ -152,8 +152,6 @@ https://www.bilibili.com/video/BV1No4y1t7Zn
 
 ![](吴恩达-Prompt.assets/2023-05-06-07-40-06-image.png)![](吴恩达-Prompt.assets/2023-05-06-07-40-17-image.png)
 
-
-
 ## 总结任务
 
 ### 单个评论总结
@@ -229,3 +227,135 @@ https://www.bilibili.com/video/BV1No4y1t7Zn
 生产中我们会将其输出为json，但是这些代码有点脆弱，因为大模型的输出结果可能并不统一
 
 ![](吴恩达-Prompt.assets/2023-05-06-08-31-00-image.png)
+
+## 文本翻译
+
+一些简单的翻译任务
+
+![](吴恩达-Prompt.assets/2023-05-07-11-01-14-image.png)
+
+### 正式场合
+
+也可以跟着情景进行翻译，比如正式和非正式
+
+![](吴恩达-Prompt.assets/2023-05-07-11-02-37-image.png)
+
+### 语言识别
+
+可以让GPT识别是什么语言，并翻译
+
+![](吴恩达-Prompt.assets/2023-05-07-11-04-15-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-11-04-00-image.png)
+
+### 语气转换
+
+根据对象不同，产生不同的语气，比如转成不同的信函
+
+![](吴恩达-Prompt.assets/2023-05-07-11-06-51-image.png)
+
+### 格式转换
+
+![](吴恩达-Prompt.assets/2023-05-07-11-30-00-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-11-30-36-image.png)
+
+### 拼写检查
+
+非母语时非常有用，但是下面简单调试了一会，其输出结果还是有双引号
+
+![](吴恩达-Prompt.assets/2023-05-07-11-33-07-image.png)
+
+还可以前后对比校正的内容
+
+![](吴恩达-Prompt.assets/2023-05-07-11-34-29-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-11-34-53-image.png)
+
+可以转换成APA格式
+
+APA格式（American Psychological Association）是一个为广泛接受的研究论文撰写格式，特别针对[社会科学](https://baike.baidu.com/item/%E7%A4%BE%E4%BC%9A%E7%A7%91%E5%AD%A6/18904321?fromModule=lemma_inlink)领域的研究，规范学术文献的引用和参考文献的撰写方法，以及表格、图表、注脚和附录的编排方式。
+
+正式来说，APA格式指的就是[美国心理学会](https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E5%BF%83%E7%90%86%E5%AD%A6%E4%BC%9A/11012363?fromModule=lemma_inlink)（**A**merican**P**sychological**A**ssociation）出版的《美国心理协会刊物准则》，已出版至第七版、总页数超过400页，[美国心理学会](https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E5%BF%83%E7%90%86%E5%AD%A6%E4%BC%9A/11012363?fromModule=lemma_inlink)是在美国具有权威性的心理学学者组织。APA格式最早出现时只有7页，被刊登在《心理学期刊（Psychological Bulletin）》。
+
+另一种相当有名的[论文格式](https://baike.baidu.com/item/%E8%AE%BA%E6%96%87%E6%A0%BC%E5%BC%8F/5969051?fromModule=lemma_inlink)为[MLA](https://baike.baidu.com/item/MLA/1197673?fromModule=lemma_inlink)格式（The MLA Style Manual），MLA格式主要被应用在[人文学科](https://baike.baidu.com/item/%E4%BA%BA%E6%96%87%E5%AD%A6%E7%A7%91/3705296?fromModule=lemma_inlink)，如文学、[比较文学](https://baike.baidu.com/item/%E6%AF%94%E8%BE%83%E6%96%87%E5%AD%A6/3742?fromModule=lemma_inlink)、文学批评和[文化研究](https://baike.baidu.com/item/%E6%96%87%E5%8C%96%E7%A0%94%E7%A9%B6?fromModule=lemma_inlink)等领域。
+
+![](吴恩达-Prompt.assets/2023-05-07-11-37-21-image.png)
+
+## 扩展短文本
+
+可以用于头脑风暴，当然也可以生成大量的垃圾邮件
+
+### 情感回复
+
+下面根据情感去回复，这个情感参数不一定很重要，因为也是从文本中提取的
+
+![](吴恩达-Prompt.assets/2023-05-07-11-42-14-image.png)
+
+不同情感回复不同的东西
+
+![](吴恩达-Prompt.assets/2023-05-07-11-42-54-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-11-43-59-image.png)
+
+### 参数响应
+
+![](吴恩达-Prompt.assets/2023-05-07-11-51-25-image.png)
+
+用较高的T，每次得到的结果都不同
+
+![](吴恩达-Prompt.assets/2023-05-07-11-53-07-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-11-54-22-image.png)
+
+## AI开发
+
+### 函数介绍
+
+![](吴恩达-Prompt.assets/2023-05-07-11-57-17-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-11-57-04-image.png)
+
+增加一个角色的概念
+
+![](吴恩达-Prompt.assets/2023-05-07-11-58-28-image.png)
+
+### 聊天机器人
+
+以下通过系统让助手表现出莎士比亚的风格 
+
+![](吴恩达-Prompt.assets/2023-05-07-12-02-26-image.png)
+
+让其表现的像一个聊天机器人
+
+![](吴恩达-Prompt.assets/2023-05-07-12-09-03-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-12-09-47-image.png)
+
+增加上下文
+
+![](吴恩达-Prompt.assets/2023-05-07-12-10-35-image.png)
+
+### 订单机器人
+
+先采集用户信息
+
+![](吴恩达-Prompt.assets/2023-05-07-12-11-44-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-12-15-45-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-12-16-23-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-12-16-46-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-12-17-10-image.png)
+
+![](吴恩达-Prompt.assets/2023-05-07-12-18-20-image.png)
+
+将订单结果进行json化，这里T设置很低，因为希望不要太随机
+
+![](吴恩达-Prompt.assets/2023-05-07-12-19-26-image.png)
+
+## 总结
+
+![](吴恩达-Prompt.assets/2023-05-07-12-21-04-image.png)
